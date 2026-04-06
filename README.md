@@ -1,0 +1,1 @@
+This project goal is to flex DOM manipulation skills.

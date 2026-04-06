@@ -1,0 +1,13 @@
+#grid-container{
+    padding: 30px;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+}
+
+.one-row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
