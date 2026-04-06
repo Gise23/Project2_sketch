@@ -29,12 +29,20 @@ function createGrid(gridSize){
     square.style.width = squareSize + "px";
     square.style.height = squareSize + "px"; 
     square.style.border = "0.5px solid grey";
+
+    const hue = Math.random() * 360;
+    let count = 0;
     square.addEventListener("mouseover", () => {
-            square.style.background = "black";                                                                                                                                                
+        if (count < 10) count++;
+        square.style.background = darkenColor(hue, count);    
         });
     row.appendChild(square)
     }}
 }
 
+function darkenColor(hue, count){
+    const lightness = 80 - (count *7);
+    return `hsl(${hue}, 70%, ${lightness}%)`;
+}
 
 
