@@ -1,13 +1,28 @@
+body{
+    background-color: rgb(176, 211, 231);
+}
+
 #grid-container{
     padding: 30px;
     width: 640px;
     height: 640px;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .one-row{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+}
+
+#btn{
+    display: block;
+    margin: 20px auto 10px;
+    padding:10px;
+    border-color: 1px rgb(146, 145, 145, 0.5);
+    background-color: black;
+    color: white;
+    font-weight: bold;
 }
